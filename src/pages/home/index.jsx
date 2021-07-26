@@ -3,7 +3,6 @@ import { Box, Container } from "@material-ui/core";
 import { Grid } from "@material-ui/core";
 import { useEffect } from "react";
 import { useState } from "react";
-
 import ProductService from "../../services/product";
 import { Header } from "../../components";
 import { CartButton } from "../../components/cart-button";

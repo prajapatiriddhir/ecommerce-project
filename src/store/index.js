@@ -1,10 +1,13 @@
 import { createStore, combineReducers } from "redux";
-import CartReducer from "./reducer/cart";
+import cartReduce from "./reducer/cart";
 import UserReducer from "./reducer/user";
 import { devToolsEnhancer } from "redux-devtools-extension";
 const root = combineReducers({
-    cart: CartReducer,
+    cart: cartReduce,
     user: UserReducer
 });
-const store = createStore(root, devToolsEnhancer());
+const store = createStore(root,devToolsEnhancer());
 export default store;
+
+
+
